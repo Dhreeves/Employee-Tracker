@@ -1,0 +1,27 @@
+{
+  "name": "employee-tracker",
+  "version": "1.0.0",
+  "description": "MySQL Employee Tracker",
+  "main": "server.js",
+  "scripts": {
+    "test": "node",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dhreeves/Employee-Tracker.git"
+  },
+  "keywords": [
+    "Tracker"
+  ],
+  "author": "Diane Reeves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dhreeves/Employee-Tracker/issues"
+  },
+  "homepage": "https://github.com/Dhreeves/Employee-Tracker#readme",
+  "dependencies": {
+    "inquirer": "^7.2.0",
+    "mysql": "^2.18.1"
+  }
+}
