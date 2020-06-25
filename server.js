@@ -24,6 +24,7 @@ connection.connect(function (err) {
     start();
 });
 
+
 function start() {
     inquirer
         .prompt({
@@ -33,7 +34,7 @@ function start() {
             choices: [
                 "View all departments",
                 "View all roles",
-                "view all employees",
+                "View all employees",
                 "Add a department",
                 "Add a role",
                 "Add an employee",
@@ -53,7 +54,7 @@ function start() {
                 addDepartment();
             } else if (answer.action === "Add a role") {
                 addRole();
-            } else if (answer.action === 'Add an employee') {
+            } else if (answer.action === "Add an employee") {
                 addEmployee();
             } else if (answer.aciton === " Update employee role") {
                 updateRole();
@@ -92,7 +93,7 @@ function viewEmployees() {
     var query = "SELECT * FROM employee";
     connection.query(query, function (err, res) {
         console.log(`EMPLOYEES:`);
-        res.forEach(role => {
+        res.forEach(employee => {
             console.log(`ID: ${employee.id} | Name: ${employee.first_name} ${employee.last_name}| Role ID: ${employee.role_id} | Manager ID: ${employee.manager_id}`);
         });
         start();

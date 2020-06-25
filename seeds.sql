@@ -4,7 +4,6 @@ INSERT INTO department
     (name)
 VALUES
     ('Information Technology');
-    
 INSERT INTO department
     (name)
 VALUES
@@ -25,23 +24,23 @@ VALUES
 INSERT INTO role
     (title, salary, department_id)
 VALUES
-    ('Data Analyst', 85, 5);
+    ('Data Analyst', 85000, 5);
 INSERT INTO role
     (title, salary, department_id)
 VALUES
-    ('Creative Director', 95, 4);
+    ('Creative Director', 95000, 4);
 INSERT INTO role
     (title, salary, department_id)
 VALUES
-    ('Brand Ambassador', 65, 3);
+    ('Brand Ambassador', 65000, 3);
 INSERT INTO role
     (title, salary, department_id)
 VALUES
-    ('Sales Rep', 120, 2);
+    ('Sales Rep', 120000, 2);
 INSERT INTO role
     (title, salary, department_id)
 VALUES
-    ('Human Resource Director', 100, 1);
+    ('Human Resource Director', 100000, 1);
 
 INSERT INTO employee
     (first_name, last_name, role_id, manager_id)
@@ -59,7 +58,7 @@ INSERT INTO employee
     (first_name, last_name, role_id, manager_id)
 VALUES
     ('Tony', 'Robbins', 44, 01);
-INSERT INTO employee
+INSERT INTO Eemployee
     (first_name, last_name, role_id, manager_id)
 VALUES
     ('Oprah', 'Winfrey', 55, 02);
